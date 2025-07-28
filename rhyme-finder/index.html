@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyme Finder</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #FFFFFF;
+            color: #FB8500;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; 
+            height: auto;
+            margin: 0;
+            padding-top: 20px; 
+            overflow-y: auto; 
+        }
+        h1 {
+            color: #219EBC;
+        }
+        h3 {
+            color: aqua;
+        }
+        h4 {
+            color: aquamarine;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 3px solid #ccc;
+            border-radius: 5px;
+            display: block;
+            width: 80%; 
+            max-width: 300px; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px; 
+        }
+        button:hover {
+            background: #bd3570;
+        }
+        .results-box {
+            background: #fff;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: left; 
+            max-height: 70vh; 
+            overflow-y: auto; 
+            width: 80%; 
+            max-width: 500px; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px; 
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Poetry Assistant</h1>
+        <input type="text" id="inputWord" placeholder="Key in your word">
+        <button onclick="findRhymes()">Find the Rhymes</button>
+        <h2 id="message">Rhymes:</h2>
+        <div id="rhymeBox" class="results-box"></div>
+    </div>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
+
